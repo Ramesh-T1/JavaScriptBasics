@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function 1</title>
+  </head>
+  <body>
+    <script>
+      let subtotal, tax;
+      //Function
+      function calculate(subtotal, tax) {
+        return subtotal + tax;
+      }
+      let sum = calculate(80, 20);
+      console.log(sum);
+      //Expression function
+      let s = function (subtotal, tax) {
+        return subtotal + tax;
+      };
+      console.log(s(120, 30));
+    </script>
+  </body>
+</html>

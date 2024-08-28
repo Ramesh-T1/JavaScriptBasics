@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bingo</title>
+  </head>
+  <script>
+    window.onload = set;
+    function set() {
+      for (i = 1; i <= 25; i++) {
+        let v = Math.floor(Math.random() * 75);
+        if (v != 0) {
+          document.getElementById("n" + i).innerHTML = v;
+        }
+      }
+    }
+  </script>
+  <body>
+    <form>
+      <table
+        spacing="20"
+        cellpadding="20"
+        width="50"
+        height="50"
+        border="solid"
+        name="Bingo"
+        id="Bingo"
+      >
+        <tr>
+          <td>B</td>
+          <td>I</td>
+          <td>N</td>
+          <td>G</td>
+          <td>O</td>
+        </tr>
+        <tr>
+          <td id="n1"></td>
+          <td id="n2"></td>
+          <td id="n3"></td>
+          <td id="n4"></td>
+          <td id="n5"></td>
+        </tr>
+        <tr>
+          <td id="n6"></td>
+          <td id="n7"></td>
+          <td id="n8"></td>
+          <td id="n9"></td>
+          <td id="n10"></td>
+        </tr>
+        <tr>
+          <td id="n11"></td>
+          <td id="n12"></td>
+          <td id="n13"></td>
+          <td id="n14"></td>
+          <td id="n15"></td>
+        </tr>
+        <tr>
+          <td id="n16"></td>
+          <td id="n17"></td>
+          <td id="n18"></td>
+          <td id="n19"></td>
+          <td id="n20"></td>
+        </tr>
+        <tr>
+          <td id="n21"></td>
+          <td id="n22"></td>
+          <td id="n23"></td>
+          <td id="n24"></td>
+          <td id="n25"></td>
+        </tr>
+      </table>
+    </form>
+    <p>Click here to generate new card</p>
+    <a href="Bingo.html" onclick="window.onload(set())">Generate card</a>
+  </body>
+</html>

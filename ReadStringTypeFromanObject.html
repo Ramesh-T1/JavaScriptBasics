@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Read String types from an Object</title>
+  </head>
+  <script>
+    let user = {
+      name: "Ramesh",
+      age: 30,
+      gender: "Male",
+      phone: 9877889900,
+    };
+    function read(u) {
+      console.log(typeof u);
+      //let a = u.name;
+      //console.log(typeof u.name);
+      if (typeof u.name == "string") {
+        console.log(u.name);
+      } else {
+        console.log("Name is not a String");
+      }
+      if (typeof u.age == "string") {
+        console.log(u.age);
+      } else {
+        console.log("Age is not a String");
+      }
+      if (typeof u.gender == "string") {
+        console.log(u.gender);
+      } else {
+        console.log("Gender is not a String");
+      }
+      if (typeof u.phone == "string") {
+        console.log(u.phone);
+      } else {
+        console.log("phone is not a String");
+      }
+    }
+    read(user);
+  </script>
+  <body></body>
+</html>

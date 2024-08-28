@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pattern</title>
+  </head>
+  <script>
+    let i, j, p;
+
+    function draw(n) {
+      console.log("Value of n:" + n);
+      for (i = 1; i <= n; i++) {
+        p = "";
+        for (j = 1; j <= i; j++) {
+          p = p + "*";
+        }
+        console.log(p);
+      }
+    }
+  </script>
+  <body>
+    <form>
+      Enter row:<input type="number" name="num" id="numb" />
+      <input
+        type="submit"
+        name="submit"
+        id="sub"
+        value="Submit"
+        onclick="draw(document.getElementById('numb').value)"
+      />
+    </form>
+  </body>
+</html>
